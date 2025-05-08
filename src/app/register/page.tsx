@@ -43,8 +43,8 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="p-6 w-[40%] mx-auto bg-white/40 backdrop-blur-md rounded-2xl shadow-md">
-      <h1 className="text-2xl font-bold mb-4">User Registration</h1>
+    <div className="p-6 w-full sm:w-[90%] md:w-[70%] lg:w-[50%] xl:w-[40%] mx-auto bg-white/40 backdrop-blur-md rounded-2xl shadow-md">
+      <h1 className="text-xl sm:text-2xl font-bold mb-4 text-center">User Registration</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <input
           {...register('firstName')}
@@ -52,28 +52,28 @@ export default function RegisterPage() {
           className="w-full border p-2 rounded"
         />
         {errors.firstName && <p className="text-red-500">{errors.firstName.message}</p>}
-
+  
         <input
           {...register('lastName')}
           placeholder="Last Name"
           className="w-full border p-2 rounded"
         />
         {errors.lastName && <p className="text-red-500">{errors.lastName.message}</p>}
-
+  
         <input
           {...register('email')}
           placeholder="Email"
           className="w-full border p-2 rounded"
         />
         {errors.email && <p className="text-red-500">{errors.email.message}</p>}
-
+  
         <input
           {...register('phone')}
           placeholder="Phone Number"
           className="w-full border p-2 rounded"
         />
         {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
-
+  
         <input
           {...register('address')}
           value={selectedAddress}
@@ -81,25 +81,24 @@ export default function RegisterPage() {
           className="w-full border p-2 rounded"
         />
         {errors.address && <p className="text-red-500">{errors.address.message}</p>}
-
+  
         <AddressPicker
           onSelect={(address: string) => {
             setSelectedAddress(address);
             setValue('address', address);
           }}
         />
-
-<div className="flex flex-col items-center space-y-4">
-  <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded">
-    Register
-  </button>
-  <a href="/login" className="text-blue-600 hover:underline">
-    Already have an account? Login
-  </a>
-</div>
-
-
+  
+        <div className="flex flex-col items-center space-y-4">
+          <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded w-full sm:w-auto">
+            Register
+          </button>
+          <a href="/login" className="text-blue-600 hover:underline">
+            Already have an account? Login
+          </a>
+        </div>
       </form>
     </div>
   );
+  
 }

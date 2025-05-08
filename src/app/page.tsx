@@ -24,7 +24,7 @@ export default function LoginPage() {
       return;
     }
 
-    // Optional: Basic email format check
+    //Basic email format check
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(cleanEmail)) {
       setError('Please enter a valid email address.');
@@ -67,9 +67,9 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex justify-center mt-20">
-      <div className="p-6 w-[40%] bg-white/80 backdrop-blur-md shadow-md">
-        <h1 className="text-2xl font-bold mb-4">Login</h1>
+    <div className="flex justify-center mt-20 px-4">
+      <div className="p-6 w-full sm:w-[90%] md:w-[60%] lg:w-[40%] bg-white/80 backdrop-blur-md shadow-md rounded-xl">
+        <h1 className="text-xl sm:text-2xl font-bold mb-4 text-center">Login</h1>
         <form onSubmit={handleLogin} className="space-y-4">
           <input
             type="email"

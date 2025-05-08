@@ -41,9 +41,9 @@ export default function DashboardPage() {
   ];
 
   return (
-    <div className="p-6 w-[70%] mx-auto bg-white/30 backdrop-blur-md rounded-2xl shadow-md">
-      <h1 className="text-3xl font-bold mb-4 text-center">User Chart</h1>
-      <div className="w-[100%] mx-auto">
+    <div className="p-4 sm:p-6 w-full sm:w-[90%] md:w-[80%] lg:w-[70%] mx-auto bg-white/30 backdrop-blur-md rounded-2xl shadow-md">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-center">User Chart</h1>
+      <div className="w-full">
         <Chart
           options={chartOptions}
           series={chartSeries}
@@ -53,5 +53,6 @@ export default function DashboardPage() {
       </div>
     </div>
   );
+  
   
 }

@@ -47,15 +47,21 @@ export default function PostDetailPage() {
   if (!post) return <p className="p-6 text-red-500">Post not found or not accessible.</p>;
 
   return (
-    <div className="p-6 w-[70%] mx-auto bg-white/30 backdrop-blur-md rounded-2xl shadow-md">
-      <Link href="/posts" className="text-blue-600 underline mb-4 inline-block">← Back to Posts</Link>
-      <h1 className="text-3xl font-bold mb-2">{post.title}</h1>
+    <div className="p-4 sm:p-6 w-full sm:w-[90%] md:w-[80%] lg:w-[70%] mx-auto bg-white/30 backdrop-blur-md rounded-2xl shadow-md">
+      <Link href="/posts" className="text-blue-600 underline mb-4 inline-block">
+        ← Back to Posts
+      </Link>
+  
+      <h1 className="text-2xl sm:text-3xl font-bold mb-2">{post.title}</h1>
       <p className="text-gray-700 mb-6">{post.body}</p>
   
-      <h2 className="text-2xl font-semibold mb-2">Comments</h2>
+      <h2 className="text-xl sm:text-2xl font-semibold mb-2">Comments</h2>
       <ul className="space-y-3">
         {comments.map(comment => (
-          <li key={comment.id} className="p-4 rounded shadow-md bg-white/30 backdrop-blur-sm">
+          <li
+            key={comment.id}
+            className="p-4 rounded shadow-md bg-white/30 backdrop-blur-sm"
+          >
             <p className="font-semibold">
               {comment.name}{' '}
               <span className="text-sm text-gray-500">({comment.email})</span>
@@ -66,5 +72,6 @@ export default function PostDetailPage() {
       </ul>
     </div>
   );
+  
   
 }

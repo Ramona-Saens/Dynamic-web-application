@@ -37,13 +37,16 @@ export default function PostsPage() {
   if (loading) return <p className="p-6">Loading posts...</p>;
 
   return (
-    <div className="p-6 w-[70%] mx-auto bg-white/30 backdrop-blur-md rounded-2xl shadow-md">
-      <h1 className="text-3xl font-bold mb-4">Posts</h1>
+    <div className="p-4 sm:p-6 w-full sm:w-[90%] md:w-[80%] lg:w-[70%] mx-auto bg-white/30 backdrop-blur-md rounded-2xl shadow-md">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4">Posts</h1>
       <ul className="space-y-4">
         {posts.map(post => (
-          <li key={post.id} className="p-4 rounded shadow-xl hover:bg-gray-50 transition">
+          <li
+            key={post.id}
+            className="p-4 rounded shadow-xl hover:bg-gray-50 transition"
+          >
             <Link href={`/posts/${post.id}`}>
-              <h2 className="text-xl font-semibold">{post.title}</h2>
+              <h2 className="text-lg sm:text-xl font-semibold">{post.title}</h2>
               <p className="text-gray-600 line-clamp-2">{post.body}</p>
             </Link>
           </li>
@@ -51,6 +54,7 @@ export default function PostsPage() {
       </ul>
     </div>
   );
+  
   
   
 }
