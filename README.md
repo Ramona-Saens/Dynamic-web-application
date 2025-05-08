@@ -40,12 +40,12 @@ Project Features Checlist
 •	 Deployed on Vercel
 
 Team Member Contributions
-Name	        GitHub Username	                                Contributions
-Rejie Recolito 	@Rejie-Recolito	   Project Structure, Authentication System, Mapbox Integration
-Ramona Saens	@Ramona-Saens	   Data Visualization (ApexCharts), User Profile and Post Pages, UI Components and 
-                                   Documentation
-Michelle Pura	@michiepura	   UI Components, Tailwind & ShadCN Integration, Form Validation (Zod)
-Lyka Duave	@Lykaa28	   GitHub Collaboration, Vercel Deployment, Final Testing 
+Name	           GitHub Username	                                Contributions
+Rejie B.Recolito   @Rejie-Recolito	   Project Structure, Authentication System, Mapbox Integration
+Ramona H. Saens	   @Ramona-Saens	   Data Visualization (ApexCharts), User Profile and Post Pages, UI Components and 
+                                           Documentation
+Michelle M. Pura   @michiepura	           UI Components, Tailwind & ShadCN Integration, Form Validation (Zod)
+Lyka B. Duave	   @Lykaa28	           GitHub Collaboration, Vercel Deployment, Final Testing 
 
 Deployed URL
 https://dynamic-web-application-sigma.vercel.app/
