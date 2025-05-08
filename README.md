@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
+Project Description
+This project is a full-featured, responsive web application built using Next.js and Tailwind CSS, aimed at demonstrating advanced frontend development skills. It showcases integration with third-party APIs like JSONPlaceholder and Mapbox, implements user authentication, form validation using Zod, and visualizes data using ApexCharts. The application simulates user interactions such as viewing profiles, posts, and comments, and restricts post visibility based on login roles.
+Setup and Installation Instructions
+1.	Clone the Repository
+git clone https://github.com/your-team/project-name.git
+cd project-name
+2.	Install Dependencies
+npm install
+3.	Environment Variables
+Create a .env.local file in the root directory and add your Mapbox access token:
+NEXT_PUBLIC_MAPBOX_API_KEY=your_mapbox_access_token
+4.	Run the Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit http://localhost:3000 to view the app.
+5.	Build for Production
+npm run build
+npm start
+ 
+Libraries & Tools Used:
+•	Next.js (frontend framework)
+•	Tailwind CSS (styling)
+•	ShadCN UI (components)
+•	Axios (data fetching)
+•	ApexCharts (data visualization)
+•	Zod (form validation)
+•	Mapbox (address location)
+•	Font Awesome (icons)
+Project Features Checlist
+	 User List  
+	 User Profile with Mapbox  
+	 Post & Comments Display  
+	 Admin/Normal User Login Logic  
+	 Zod Validation on Registration Form  
+	 Data Visualization with ApexCharts  
+	 Deployed on Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Team Member Contributions
+Name	GitHub Username	Contributions
+Member 1 (Leader)	@member1	Project structure, API integration, authentication system, Mapbox integration
+Member 2	@member2	Data visualization (ApexCharts), user profile and post pages
+Member 3	@member3	UI components, Tailwind & ShadCN integration, form validation (Zod)
+Member 4	@member4	GitHub collaboration, Vercel deployment, final testing & documentation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed URL
+(url/link from vercel app)
