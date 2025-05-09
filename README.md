@@ -1,5 +1,7 @@
 Project Description
 	This project is a full-featured, responsive web application built using Next.js and Tailwind CSS, aimed at demonstrating advanced frontend development skills. It showcases integration with third-party APIs like JSONPlaceholder and Mapbox, implements user authentication, form validation using Zod, and visualizes data using ApexCharts. The application simulates user interactions such as viewing profiles, posts, and comments, and restricts post visibility based on login roles.
+
+Setup and Installation Instructions 
  
 1.Clone the Repository
 git clone https://github.com/Ramona-Saens/Dynamic-web-application.git
