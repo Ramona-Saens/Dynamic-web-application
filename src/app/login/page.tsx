@@ -55,7 +55,7 @@ export default function LoginPage() {
 
       if (user && cleanPassword === user.username) {
         localStorage.setItem('user', JSON.stringify({ ...user, isAdmin: false }));
-        router.push('/mypost');
+        router.push('/myposts');
       } else {
         setError('Invalid credentials. Use your email as username and your username as password.');
       }
